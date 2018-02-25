@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * com.justilise.mss: TODO input functional description here
+ * com.justilise.mss: Register centre server based on Eureka
  * <p>
  * Date: 24/02/2018 Time: 11:35 AM
  *
@@ -15,9 +15,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
  */
 @SpringBootApplication
 @EnableEurekaServer
-public class MssApplication {
+public class RegisterCentreApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MssApplication.class, args);
+        SpringApplication.run(RegisterCentreApplication.class, args);
     }
 }
