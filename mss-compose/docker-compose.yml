@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mss-register-centre:
+    ports:
+      - "8761"
+    image: "justilise/mss-register-centre:latest"
+    environment:
+      - spring.profiles.active=dev
+  mss-app-layer:
+    environment:
+      - EUREKA_SERVER_ADDRESS=http://mss-register-centre:8761/eureka
+    ports:
+      - "8080"
+    image: "justilise/mss-app-layer:latest"
